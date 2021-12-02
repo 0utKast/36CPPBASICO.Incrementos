@@ -1,12 +1,53 @@
 #include <iostream>
 
+int sumar(int x, int y)
+{
+    return x + y;
+}
+
+int main()
+{
+    int x{ 8 };
+    int valor{ sumar(x, ++x) }; // ¿esto es  8 + 9, ó 9 + 9?
+    // Eso depende del orden en el que tu compilador evalúe los argumentos de la función 
+
+    std::cout << valor << '\n'; // valor puede ser 17 ó 18, dependiendo de cómo se evalúe la línea de arriba
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#include <iostream>
+
 int main()
 {
     int x{};
     x = 5; // el operador de asignación modifica el estado de x
     ++x; // el operador++ modifica el estado de x
     std::cout << x; // el operador << modifica el estado de la consola
-}
+}*/
 
 
 
