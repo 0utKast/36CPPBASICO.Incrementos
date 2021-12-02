@@ -2,6 +2,34 @@
 
 int main()
 {
+    int x{};
+    x = 5; // el operador de asignación modifica el estado de x
+    ++x; // el operador++ modifica el estado de x
+    std::cout << x; // el operador << modifica el estado de la consola
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#include <iostream>
+
+int main()
+{
     int x{ 5 };
     int y{ 5 };
     std::cout << x << ' ' << y << '\n';
@@ -11,7 +39,7 @@ int main()
     std::cout << x << ' ' << y << '\n';
 
     return 0;
-}
+}*/
 
 
 
